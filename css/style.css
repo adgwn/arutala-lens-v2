@@ -1329,6 +1329,18 @@ a { color: inherit; text-decoration: none; }
   .partners__grid { gap: 1rem; }
   .partners__row { flex-wrap: wrap; justify-content: center; }
   .cta__inner { grid-template-columns: 1fr; }
+
+  /* Tablet: About tidak lagi menempel kanan */
+  .about__text {
+    justify-self: center;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .about--hero .about__grid {
+    justify-items: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1350,6 +1362,11 @@ a { color: inherit; text-decoration: none; }
   .cta__actions .btn { width: 100%; justify-content: center; }
   .footer__inner { flex-direction: column; align-items: flex-start; }
   .footer__links { gap: 1.8rem; }
+
+  /* Mobile: Hero About & teks */
+  .about--hero { min-height: auto; padding-top: 6.5rem; padding-bottom: 5rem; }
+  .about__text { padding: 0 0.5rem; }
+  .quote { padding: 1.4rem; }
 }
 /* ===== Judul terang untuk section dengan background gelap (multi-page) ===== */
 .services .section-title {
