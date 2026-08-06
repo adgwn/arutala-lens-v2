@@ -1367,6 +1367,14 @@ a { color: inherit; text-decoration: none; }
   .about--hero { min-height: auto; padding-top: 6.5rem; padding-bottom: 5rem; }
   .about__text { padding: 0 0.5rem; }
   .quote { padding: 1.4rem; }
+
+  /* Mobile: perapian umum */
+  .section-title { max-width: 100%; }
+  .section-head { margin-bottom: 2.4rem; }
+  .quote { text-align: center; align-items: center; }
+  .quote blockquote { font-size: 1.02rem; line-height: 1.6; }
+  .intro__stats > * { padding: 1.4rem 0.5rem; }
+  .btn { max-width: 100%; }
 }
 /* ===== Judul terang untuk section dengan background gelap (multi-page) ===== */
 .services .section-title {
