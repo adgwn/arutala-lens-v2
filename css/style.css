@@ -32,6 +32,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-h);
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -41,6 +43,7 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img { display: block; max-width: 100%; }
@@ -265,6 +268,13 @@ a { color: inherit; text-decoration: none; }
 .hero__video {
   width: 100%; height: 100%;
   object-fit: cover;
+}
+.hero__poster-img {
+  position: absolute;
+  inset: 0;
+}
+.hero__video {
+  position: relative;
 }
 .hero__shade {
   position: absolute;
