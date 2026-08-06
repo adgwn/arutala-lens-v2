@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arutala Lens — Photography • Videography • Documentation</title>
+  <meta name="description" content="Arutala Lens is a modern photography and videography studio preserving authentic moments through cinematic visual storytelling." />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css?v=117" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="navbar">
+    <a href="#home" class="nav__brand">
+      <img class="nav__logo-img" src="img/logo-arutala.png" alt="Arutala Lens logo" />
+      <span class="nav__brandtext">Arutala <em>Lens</em></span>
+    </a>
+
+    <nav class="nav__menu" id="navMenu" aria-label="Main navigation">
+      <a href="#home" class="nav__link active">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="portfolio.html" class="nav__link">Portfolio</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+
+    <div class="nav__right">
+      <div class="nav__cta-wrap"><a href="https://wa.me/62882005742702" class="btn btn--primary nav__cta" style="padding:0.6rem 1.5rem;font-size:0.85rem;">Book Now</a></div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="img/hero-bg.jpg">
+        <source src="img/hero-video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title reveal" data-delay="80">Capturing<br />Moments,<br /><span class="hero__title-accent">Creating</span><br />Memories.</h1>
+        <p class="hero__sub reveal" data-delay="160">
+          We capture authentic moments, meaningful stories, and unforgettable
+          experiences through photography and cinematic video.
+        </p>
+        <div class="hero__actions reveal" data-delay="240">
+          <a href="#portfolio" class="btn btn--ghost-light">View Portfolio</a>
+          <a href="https://wa.me/62882005742702" class="btn btn--secondary">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <span class="hero__line"></span>
+    </div>
+  </section>
+
+  <!-- ================= TRUST / INTRO ================= -->
+  <section class="intro">
+    <div class="container">
+      <div class="intro__text reveal">
+        <p class="eyebrow reveal">We Preserve Your Moments</p>
+        <h2 class="section-title reveal" data-delay="80">Because Every Moment<br />Deserves to Be Remembered.</h2>
+        <p class="intro__para reveal" data-delay="160">
+          Arutala Lens is a modern photography and videography studio. We blend
+          technical craft with genuine emotion to document the moments that matter
+          most — turning fleeting instants into memories you can hold forever.
+        </p>
+      </div>
+
+      <div class="intro__stats reveal" data-delay="240">
+        <div class="stat">
+          <span class="stat__num">100+</span>
+          <span class="stat__label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">50+</span>
+          <span class="stat__label">Happy Clients</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">4+</span>
+          <span class="stat__label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PORTFOLIO (dipindah ke portfolio.html) ================= -->
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio__bg" aria-hidden="true">
+      <img src="download/portoo.jpeg" alt="" />
+      <div class="portfolio__bg-shade"></div>
+    </div>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h2 class="section-title">Our Recent Stories</h2>
+        </div>
+        <p class="section-sub">A collection of moments we've captured through our lens.</p>
+      </div>
+      <div class="portfolio__photo reveal" style="display:flex;justify-content:center;">
+        <a href="portfolio.html" class="btn btn--primary btn--bright">Lihat Portfolio &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES (dipindah ke services.html) ================= -->
+  <section class="services" id="services">
+    <div class="services__bg" aria-hidden="true">
+      <img src="img/hero-bg.jpg" alt="" />
+      <div class="services__bg-shade"></div>
+    </div>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Services</p>
+          <h2 class="section-title">What We Capture</h2>
+        </div>
+        <p class="section-sub">Event, Graduation, Wedding, WCC, Drone, Sport, Cinematic &amp; Trip.</p>
+      </div>
+      <div class="services__grid reveal" style="justify-content:center;">
+        <a href="services.html" class="btn btn--primary btn--bright">Lihat Semua Layanan &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT (link ke halaman multi-page) ================= -->
+  <section class="about" id="about">
+    <div class="about__bg"><img src="img/mee2.png" alt="" /></div>
+    <div class="about__bg-shade"></div>
+    <div class="container about__grid">
+      <div class="about__text reveal" data-delay="120">
+        <p class="eyebrow">About Arutala Lens</p>
+        <h2 class="section-title">Your Story,<br />Through Our Lens.</h2>
+        <p class="about__copy">
+          Arutala Lens is a documentation studio focused on capturing genuine emotions
+          and meaningful moments through photography and cinematic videography.
+        </p>
+        <a href="about.html" class="btn btn--primary btn--bright">Selengkapnya Tentang Kami &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CLIENTS & VENDORS (dipindah ke about.html) ================= -->
+  <section class="clients" id="clients">
+    <div class="clients__bg" aria-hidden="true">
+      <img src="img/hero-bg.jpg" alt="" />
+      <div class="clients__bg-shade"></div>
+    </div>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Trusted By</p>
+          <h2 class="section-title">Client &amp; Vendor</h2>
+        </div>
+        <p class="clients__intro">See the logos of our trusted clients and vendor &amp; EO partnerships.</p>
+      </div>
+      <div class="clients__grid reveal" style="justify-content:center;">
+        <a href="about.html" class="btn btn--primary btn--bright">Lihat Klien &amp; Vendor &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section class="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Process</p>
+          <h2 class="section-title">How We Work</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__node reveal" style="--i:0">
+          <span class="timeline__bar"></span>
+          <span class="timeline__num">01</span>
+          <h4 class="timeline__title">Discover</h4>
+          <p class="timeline__desc">Understand your story and needs.</p>
+        </div>
+        <div class="timeline__node reveal" style="--i:1">
+          <span class="timeline__bar"></span>
+          <span class="timeline__num">02</span>
+          <h4 class="timeline__title">Plan</h4>
+          <p class="timeline__desc">Prepare the concept and details.</p>
+        </div>
+        <div class="timeline__node reveal" style="--i:2">
+          <span class="timeline__bar"></span>
+          <span class="timeline__num">03</span>
+          <h4 class="timeline__title">Capture</h4>
+          <p class="timeline__desc">Document the moments naturally.</p>
+        </div>
+        <div class="timeline__node reveal" style="--i:3">
+          <span class="timeline__bar"></span>
+          <span class="timeline__num">04</span>
+          <h4 class="timeline__title">Deliver</h4>
+          <p class="timeline__desc">Turn those moments into lasting memories.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIAL ================= -->
+  <section class="testimonial">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow" style="color:#A1A1AA">Testimonials</p>
+          <h2 class="section-title" style="color:var(--white)">Words From Our Clients</h2>
+        </div>
+      </div>
+
+      <div class="testimonial__grid">
+        <figure class="quote reveal">
+          <div class="quote__stars">&starf;&starf;&starf;&starf;&starf;</div>
+          <blockquote>&ldquo;Serius cakep bgtt hasilnya, ngga salah pilih fg.&rdquo;</blockquote>
+          <figcaption>
+            <span class="quote__name">Zifa</span>
+            <span class="quote__type">Graduation</span>
+          </figcaption>
+        </figure>
+        <figure class="quote reveal" data-delay="100">
+          <div class="quote__stars">&starf;&starf;&starf;&starf;&starf;</div>
+          <blockquote>&ldquo;Hasil editannya vidionya cakep poll, respon kalau ada revisi juga cepet.&rdquo;</blockquote>
+          <figcaption>
+            <span class="quote__name">Ellen</span>
+            <span class="quote__type">mice / aquapress</span>
+          </figcaption>
+        </figure>
+        <figure class="quote reveal" data-delay="200">
+          <div class="quote__stars">&starf;&starf;&starf;&starf;&starf;</div>
+          <blockquote>&ldquo;Keren poll, acara selesai video bisa langsung tayang di bus waktu perjalanan pulang.&rdquo;</blockquote>
+          <figcaption>
+            <span class="quote__name">Agus</span>
+            <span class="quote__type">Family Gathering &bull; FIAI UII</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA / CONTACT (dipindah ke contact.html) ================= -->
+  <section class="cta" id="contact">
+    <div class="container cta__inner">
+
+      <div class="cta__content">
+        <p class="eyebrow reveal">Get in Touch</p>
+        <h2 class="cta__title reveal" data-delay="80">Let's Capture<br />Your Story.</h2>
+        <p class="cta__sub reveal" data-delay="160">Have a moment worth remembering?</p>
+        <div class="cta__actions reveal" data-delay="240">
+          <a href="contact.html" class="btn btn--navy btn--bright">Hubungi Kami &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo-img" src="img/logo-arutala.png" alt="Arutala Lens logo" />
+        <div class="footer__brandtext">Arutala <em>Lens</em>
+          <p class="footer__tag">Photography &bull; Videography &bull; Visual Storytelling</p>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="https://www.instagram.com/arutala.lens?igsh=ZDhsaTB5b3d1OWEx" class="footer__link">Instagram</a>
+        <a href="https://wa.me/62882005742702" class="footer__link">WhatsApp</a>
+        <a href="mailto:hello@arutalalens.com" class="footer__link">Email</a>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 Arutala Lens. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

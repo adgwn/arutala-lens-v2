@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Arutala Lens</title>
+  <meta name="description" content="Portfolio — a collection of recent stories captured by Arutala Lens." />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css?v=117" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="navbar">
+    <a href="index.html" class="nav__brand">
+      <img class="nav__logo-img" src="img/logo-arutala.png" alt="Arutala Lens logo" />
+      <span class="nav__brandtext">Arutala <em>Lens</em></span>
+    </a>
+
+    <nav class="nav__menu" id="navMenu" aria-label="Main navigation">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="portfolio.html" class="nav__link active">Portfolio</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+
+    <div class="nav__right">
+      <div class="nav__cta-wrap"><a href="https://wa.me/62882005742702" class="btn btn--primary nav__cta" style="padding:0.6rem 1.5rem;font-size:0.85rem;">Book Now</a></div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= PORTFOLIO ================= -->
+  <section class="portfolio" id="portfolio" style="padding-top:clamp(8rem,14vw,11rem);">
+    <div class="portfolio__bg" aria-hidden="true">
+      <img src="download/portoo.jpeg" alt="" />
+      <div class="portfolio__bg-shade"></div>
+    </div>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h2 class="section-title">Our Recent Stories</h2>
+        </div>
+        <p class="section-sub">A collection of moments we've captured through our lens.</p>
+      </div>
+      <div class="portfolio__photo reveal">
+        <img src="img/portfolio-bg.jpg" alt="Recent stories" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo-img" src="img/logo-arutala.png" alt="Arutala Lens logo" />
+        <div class="footer__brandtext">Arutala <em>Lens</em>
+          <p class="footer__tag">Photography &bull; Videography &bull; Visual Storytelling</p>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="https://www.instagram.com/arutala.lens?igsh=ZDhsaTB5b3d1OWEx" class="footer__link">Instagram</a>
+        <a href="https://wa.me/62882005742702" class="footer__link">WhatsApp</a>
+        <a href="mailto:hello@arutalalens.com" class="footer__link">Email</a>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 Arutala Lens. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

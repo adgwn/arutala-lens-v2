@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Arutala Lens</title>
+  <meta name="description" content="Contact Arutala Lens — get in touch, book your documentation, and capture your story." />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css?v=117" />
+
+  <style>
+    /* ===== Kontak form ===== */
+    .contact-page { padding-top: clamp(8rem, 14vw, 11rem); background: #0A0A0A; }
+    .contact__layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3rem;
+      align-items: start;
+      margin-top: 2.5rem;
+    }
+    .contact__info .section-sub { color: #A1A1AA; max-width: 36ch; margin-top: 0.75rem; }
+    .contact__info-item {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 1rem 1.25rem;
+      margin-top: 1rem;
+      background: #141417;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: var(--radius);
+      color: #E4E4E7;
+      transition: border-color 0.25s ease, transform 0.25s ease;
+    }
+    .contact__info-item:hover { border-color: var(--primary); transform: translateY(-2px); }
+    .contact__info-label { display: block; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: #71717A; }
+    .contact__info-value { display: block; font-weight: 600; margin-top: 0.15rem; }
+
+    .contact__form {
+      background: #141417;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      padding: 2.25rem;
+      box-shadow: 0 30px 60px -22px rgba(0,0,0,0.7);
+    }
+    .contact__form-title { font-size: 1.35rem; font-weight: 700; color: var(--white); margin-bottom: 0.35rem; }
+    .contact__form-sub { color: #A1A1AA; margin-bottom: 1.75rem; }
+    .contact__form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .contact__field { margin-bottom: 1.15rem; }
+    .contact__label { display: block; font-size: 0.8rem; font-weight: 600; color: #E4E4E7; margin-bottom: 0.4rem; }
+    .contact__input,
+    .contact__select,
+    .contact__textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      font: inherit;
+      color: #fff;
+      background: #0E0E11;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 0.6rem;
+      outline: none;
+      transition: border-color 0.25s ease;
+    }
+    .contact__input:focus,
+    .contact__select:focus,
+    .contact__textarea:focus { border-color: var(--primary); }
+    .contact__textarea { min-height: 120px; resize: vertical; }
+    .contact__button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    @media (max-width: 860px) {
+      .contact__layout { grid-template-columns: 1fr; }
+      .contact__form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="navbar">
+    <a href="index.html" class="nav__brand">
+      <img class="nav__logo-img" src="img/logo-arutala.png" alt="Arutala Lens logo" />
+      <span class="nav__brandtext">Arutala <em>Lens</em></span>
+    </a>
+
+    <nav class="nav__menu" id="navMenu" aria-label="Main navigation">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="portfolio.html" class="nav__link">Portfolio</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="contact.html" class="nav__link active">Contact</a>
+    </nav>
+
+    <div class="nav__right">
+      <div class="nav__cta-wrap"><a href="https://wa.me/62882005742702" class="btn btn--primary nav__cta" style="padding:0.6rem 1.5rem;font-size:0.85rem;">Book Now</a></div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= CTA / CONTACT ================= -->
+  <section class="contact-page" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Get in Touch</p>
+          <h2 class="section-title">Let's Capture<br />Your Story.</h2>
+        </div>
+        <p class="section-sub">Have a moment worth remembering? Fill the form or reach us directly.</p>
+      </div>
+
+      <div class="contact__layout">
+        <!-- Info & CTA -->
+        <div class="contact__info reveal">
+          <p class="contact__info-text section-sub">
+            Konsultasikan kebutuhan dokumentasi Anda bersama Arutala Lens.
+            Kami siap membantu mewujudkan momen Anda menjadi kenangan yang abadi.
+          </p>
+
+          <div class="contact__info-item">
+            <div>
+              <span class="contact__info-label">WhatsApp</span>
+              <a href="https://wa.me/62882005742702" class="contact__info-value" style="color:#4ADE80;">+62 882-0057-42702</a>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div>
+              <span class="contact__info-label">Instagram</span>
+              <a href="https://www.instagram.com/arutala.lens?igsh=ZDhsaTB5b3d1OWEx" class="contact__info-value" style="color:#E879F9;">@arutala.lens</a>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div>
+              <span class="contact__info-label">Email</span>
+              <a href="mailto:hello@arutalalens.com" class="contact__info-value" style="color:#E4E4E7;">hello@arutalalens.com</a>
+            </div>
+          </div>
+
+          <!-- CTA button -->
+          <div style="margin-top:2rem;">
+            <a href="https://wa.me/62882005742702" class="btn btn--navy btn--bright" style="display:inline-flex;">Book Arutala Lens &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Form kontak -->
+        <form class="contact__form reveal" data-delay="100" action="https://wa.me/62882005742702" method="get" onsubmit="submitToWhatsApp(event)">
+          <h3 class="contact__form-title">Kirim Pesan</h3>
+          <p class="contact__form-sub">Isi form di bawah, pesan akan langsung terkirim ke WhatsApp kami.</p>
+
+          <div class="contact__form-row">
+            <div class="contact__field">
+              <label class="contact__label" for="name">Nama</label>
+              <input class="contact__input" type="text" id="name" name="name" placeholder="Nama Anda" required />
+            </div>
+            <div class="contact__field">
+              <label class="contact__label" for="phone">WhatsApp</label>
+              <input class="contact__input" type="tel" id="phone" name="phone" placeholder="+62xxx" required />
+            </div>
+          </div>
+
+          <div class="contact__field">
+            <label class="contact__label" for="service">Layanan</label>
+            <select class="contact__select" id="service" name="service">
+              <option value="Event">Event</option>
+              <option value="Graduation">Graduation</option>
+              <option value="Wedding">Wedding</option>
+              <option value="WCC (Wedding Content Creator)">WCC (Wedding Content Creator)</option>
+              <option value="Drone Documentation">Drone Documentation</option>
+              <option value="Sport">Sport</option>
+              <option value="Cinematic">Cinematic</option>
+              <option value="Trip">Trip</option>
+            </select>
+          </div>
+
+          <div class="contact__field">
+            <label class="contact__label" for="message">Pesan</label>
+            <textarea class="contact__textarea" id="message" name="message" placeholder="Jelaskan kebutuhan Anda..." required></textarea>
+          </div>
+
+          <div class="contact__button-row">
+            <button type="submit" class="btn btn--primary btn--bright">Kirim via WhatsApp</button>
+            <a href="https://wa.me/62882005742702" class="btn btn--navy">Book Now</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo-img" src="img/logo-arutala.png" alt="Arutala Lens logo" />
+        <div class="footer__brandtext">Arutala <em>Lens</em>
+          <p class="footer__tag">Photography &bull; Videography &bull; Visual Storytelling</p>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="https://www.instagram.com/arutala.lens?igsh=ZDhsaTB5b3d1OWEx" class="footer__link">Instagram</a>
+        <a href="https://wa.me/62882005742702" class="footer__link">WhatsApp</a>
+        <a href="mailto:hello@arutalalens.com" class="footer__link">Email</a>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 Arutala Lens. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    function submitToWhatsApp(e) {
+      e.preventDefault();
+      var name = document.getElementById("name").value;
+      var phone = document.getElementById("phone").value;
+      var service = document.getElementById("service").value;
+      var msg = document.getElementById("message").value;
+      var text = "Halo Arutala Lens!%0ASaya ingin bertanya.%0A%0A- Nama: " + encodeURIComponent(name) +
+        "%0A- Kontak: " + encodeURIComponent(phone) +
+        "%0A- Layanan: " + encodeURIComponent(service) +
+        "%0A- Pesan: " + encodeURIComponent(msg);
+      window.open("https://wa.me/62882005742702?text=" + text, "_blank");
+    }
+  </script>
+</body>
+</html>
