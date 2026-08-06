@@ -1321,11 +1321,24 @@ a { color: inherit; text-decoration: none; }
     padding: 2rem;
     background: var(--navy);
     color: var(--white);
-    transform: translateX(100%);
-    transition: transform 0.55s var(--ease);
+    /* Geser penuh keluar viewport + sembunyikan agar tidak memicu
+       horizontal scroll/overscroll di layar mobile */
+    transform: translateX(110%);
+    visibility: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    opacity: 0;
+    transition: transform 0.55s var(--ease), opacity 0.4s, visibility 0s linear 0.55s;
     box-shadow: -20px 0 60px -20px rgba(23,37,84,0.6);
+    pointer-events: none;
   }
-  .nav__menu.open { transform: translateX(0); }
+  .nav__menu.open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition: transform 0.55s var(--ease), opacity 0.4s, visibility 0s;
+  }
   .nav__link { font-size: 1.15rem; opacity: 0.95; color: var(--white); }
   .nav__link.active { color: var(--sky); }
   .nav__toggle { display: flex; }
